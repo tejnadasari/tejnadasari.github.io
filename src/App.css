@@ -1,33 +1,120 @@
+html, body {
+  height: 100%;
+  width: 100%
+}
+
 .App {
   text-align: center;
+  height: 200vh;
+  width:  100vw;
+  position: relative; 
+  background: grey;
+  overflow: hidden;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.mainPage {
+  width: 50%;
+  height: 100%;
+  float: left;
+  transition: all 1s ease-out;
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
+  transform: translateX(0);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.mainPage--left {
+  background: white;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  
 }
 
-.App-link {
-  color: #61dafb;
+#particleBackground {
+    position:fixed !important;
+    left:0;
+    top:0;
+    width:100%;
+    height: 100%;
+    z-index: -1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.introduction {
+  margin: auto; 
+  padding-top: 70px;
+
+}
+
+.nameTitle {
+  font-size: 65px;
+  padding-top: 150px;
+}
+
+.aboutMe {
+  font-size: 30px;
+}
+
+
+.mainPage--left.openPage {
+  transform: translateX(-100%);
+}
+
+.mainPage--right {
+  background: white;
+}
+
+.mainPage--right.openPage {
+  transform: translateX(100%);
+}
+
+.profile {
+  height: 300px;
+}
+
+.secondPage {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  position: fixed;
+  margin: 0;
+  padding: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  overflow: scroll;
+  box-sizing: border-box;
+}
+
+.secondPage > *{
+  width: 100%;
+}
+
+
+.lastPage {
+  width: 50%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: fixed;
+  transition: all 1s ease-out;
+  z-index: 3;
+}
+
+.lastPage--right.closePage, .lastPage--left.closePage{
+  transform: translateX(0);
+}
+
+.lastPage--right{
+  background: white;
+  margin-left: 50%;
+  transform: translateX(100%);
+}
+
+.lastPage--left{
+  background: white;
+  transform: translateX(-100%);
+}
+
+/* Form Styling */
+.form{
+  font-size: 30px;
 }
