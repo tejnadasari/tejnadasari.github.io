@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/tejnadasari.github.io/static/css/main.2cce8147.chunk.css",
-    "main.js": "/tejnadasari.github.io/static/js/main.9c99e332.chunk.js",
-    "main.js.map": "/tejnadasari.github.io/static/js/main.9c99e332.chunk.js.map",
+    "main.css": "/tejnadasari.github.io/static/css/main.a24164cd.chunk.css",
+    "main.js": "/tejnadasari.github.io/static/js/main.55a59c4f.chunk.js",
+    "main.js.map": "/tejnadasari.github.io/static/js/main.55a59c4f.chunk.js.map",
     "runtime~main.js": "/tejnadasari.github.io/static/js/runtime~main.84422e37.js",
     "runtime~main.js.map": "/tejnadasari.github.io/static/js/runtime~main.84422e37.js.map",
-    "static/js/2.b41502e9.chunk.js": "/tejnadasari.github.io/static/js/2.b41502e9.chunk.js",
-    "static/js/2.b41502e9.chunk.js.map": "/tejnadasari.github.io/static/js/2.b41502e9.chunk.js.map",
+    "static/js/2.b606f023.chunk.js": "/tejnadasari.github.io/static/js/2.b606f023.chunk.js",
+    "static/js/2.b606f023.chunk.js.map": "/tejnadasari.github.io/static/js/2.b606f023.chunk.js.map",
     "index.html": "/tejnadasari.github.io/index.html",
-    "precache-manifest.a72a935bfb83d143b5489a5fae39f926.js": "/tejnadasari.github.io/precache-manifest.a72a935bfb83d143b5489a5fae39f926.js",
+    "precache-manifest.d232eb2d92f01de4abfef08885e0b326.js": "/tejnadasari.github.io/precache-manifest.d232eb2d92f01de4abfef08885e0b326.js",
     "service-worker.js": "/tejnadasari.github.io/service-worker.js",
-    "static/css/main.2cce8147.chunk.css.map": "/tejnadasari.github.io/static/css/main.2cce8147.chunk.css.map",
-    "static/media/logo.svg": "/tejnadasari.github.io/static/media/logo.5d5d9eef.svg"
+    "static/css/main.a24164cd.chunk.css.map": "/tejnadasari.github.io/static/css/main.a24164cd.chunk.css.map"
   }
 }
