@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Acme";
+  src: url(./fonts/Acme-Regular.ttf);
+}
+
+@font-face {
+  font-family: "IBMPlex";
+  src: url(./fonts/IBMPlexSans-Regular.ttf);
+}
+
 html, body {
   height: 100%;
   width: 100%
@@ -8,7 +18,7 @@ html, body {
   height: 200vh;
   width:  100vw;
   position: relative; 
-  background: grey;
+  background: #00BFF3;
   overflow: hidden;
 }
 
@@ -23,12 +33,11 @@ html, body {
   transform: translateX(0);
 }
 
-.mainPage--left {
-  background: white;
-  font-family: Arial, Helvetica, sans-serif;
-  color: black;
-  
+.mainPage--left{
+  background:#B1BBF8;
+  font-family: "Acme" !important;
 }
+
 
 #particleBackground {
     position:fixed !important;
@@ -41,17 +50,23 @@ html, body {
 
 .introduction {
   margin: auto; 
-  padding-top: 70px;
+  padding-top: 60px;
+  padding-left: 20px;
 
 }
 
 .nameTitle {
-  font-size: 65px;
+  font-size: 100px;
   padding-top: 150px;
+  color: #4961E3;
+  text-align: center;
 }
 
 .aboutMe {
   font-size: 30px;
+  color: black;
+  text-align: center;
+  padding-left: 20px;
 }
 
 
@@ -60,7 +75,7 @@ html, body {
 }
 
 .mainPage--right {
-  background: white;
+  background: #B1BBF8;
 }
 
 .mainPage--right.openPage {
@@ -68,8 +83,13 @@ html, body {
 }
 
 .profile {
-  height: 300px;
+  display: block;
+  padding-top: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
+
 
 .secondPage {
   z-index: 2;
@@ -104,17 +124,25 @@ html, body {
 }
 
 .lastPage--right{
-  background: white;
+  background: #B1BBF8;
   margin-left: 50%;
   transform: translateX(100%);
 }
 
 .lastPage--left{
-  background: white;
+  background:#B1BBF8;
   transform: translateX(-100%);
 }
 
 /* Form Styling */
-.form{
-  font-size: 30px;
+.form h1, h2{
+  font-size: 45px;
+  font-family: "Acme";
 }
+
+.form{
+  font-size: 25px;
+  font-family: "IBMPlex";
+}
+
+/* Textbox Styling */

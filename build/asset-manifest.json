@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/tejnadasari.github.io/static/css/main.a24164cd.chunk.css",
-    "main.js": "/tejnadasari.github.io/static/js/main.55a59c4f.chunk.js",
-    "main.js.map": "/tejnadasari.github.io/static/js/main.55a59c4f.chunk.js.map",
-    "runtime~main.js": "/tejnadasari.github.io/static/js/runtime~main.84422e37.js",
-    "runtime~main.js.map": "/tejnadasari.github.io/static/js/runtime~main.84422e37.js.map",
-    "static/js/2.b606f023.chunk.js": "/tejnadasari.github.io/static/js/2.b606f023.chunk.js",
-    "static/js/2.b606f023.chunk.js.map": "/tejnadasari.github.io/static/js/2.b606f023.chunk.js.map",
-    "index.html": "/tejnadasari.github.io/index.html",
-    "precache-manifest.d232eb2d92f01de4abfef08885e0b326.js": "/tejnadasari.github.io/precache-manifest.d232eb2d92f01de4abfef08885e0b326.js",
-    "service-worker.js": "/tejnadasari.github.io/service-worker.js",
-    "static/css/main.a24164cd.chunk.css.map": "/tejnadasari.github.io/static/css/main.a24164cd.chunk.css.map"
+    "main.css": "/static/css/main.50b99756.chunk.css",
+    "main.js": "/static/js/main.b4ecde70.chunk.js",
+    "main.js.map": "/static/js/main.b4ecde70.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.c94be24e.chunk.js": "/static/js/2.c94be24e.chunk.js",
+    "static/js/2.c94be24e.chunk.js.map": "/static/js/2.c94be24e.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.9dc6c5642fa8f0c4bb8b85e813011587.js": "/precache-manifest.9dc6c5642fa8f0c4bb8b85e813011587.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.50b99756.chunk.css.map": "/static/css/main.50b99756.chunk.css.map",
+    "static/media/App.css": "/static/media/IBMPlexSans-Regular.c02b4dc6.ttf"
   }
 }
