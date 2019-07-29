@@ -40,7 +40,7 @@ class App extends React.Component {
             <Typist
             avgTypingDelay={40}
             >
-              <p className="nameTitle"> Hi, I am CKDasari! </p>
+              <p className="nameTitle"> Hi, I am Tejna Dasari! </p>
               <Typist.Delay ms={1000} />
               
               <br></br>
