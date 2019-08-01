@@ -30,11 +30,13 @@ html, body {
   overflow: hidden;
   position: relative;
   z-index: 3;
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
   transform: translateX(0);
 }
 
 .mainPage--left{
-  background:#B1BBF8;
+  background: #FFE400;
   font-family: "Acme" !important;
 }
 
@@ -58,27 +60,31 @@ html, body {
 .nameTitle {
   font-size: 100px;
   padding-top: 150px;
-  color: #4961E3;
+  color:#0000CC;
   text-align: center;
 }
 
 .aboutMe {
   font-size: 30px;
-  color: black;
+  color: #9C1A00;
   text-align: center;
   padding-left: 20px;
 }
 
 
 .mainPage--left.openPage {
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
   transform: translateX(-100%);
 }
 
 .mainPage--right {
-  background: #B1BBF8;
+  background: #FFE400;
 }
 
 .mainPage--right.openPage {
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
   transform: translateX(100%);
 }
 
@@ -120,17 +126,23 @@ html, body {
 }
 
 .lastPage--right.closePage, .lastPage--left.closePage{
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
   transform: translateX(0);
 }
 
 .lastPage--right{
   background: #B1BBF8;
   margin-left: 50%;
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
   transform: translateX(100%);
 }
 
 .lastPage--left{
   background:#B1BBF8;
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
   transform: translateX(-100%);
 }
 

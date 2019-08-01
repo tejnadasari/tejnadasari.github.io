@@ -15,10 +15,9 @@ class App extends React.Component {
     //var $timeline        = $('.timeline');
     const that = this;
     window.addEventListener('scroll', function (e) {
-      that.setState({ scrollPosition: document.documentElement.scrollTop })
-      console.log("you scrolled", document.documentElement.scrollTop)
+      that.setState({ scrollPosition: window.scrollY })
+      console.log("you scrolled", window.scrollY)
     });
-
   }
 
   async handleSubmit(event) {
