@@ -22,20 +22,20 @@ export default class extends Component{
               </div>
               <div className="timeline-item flex-items-default">
                 <div className="timeline-content text-left">
-                  <h2> Women in Computer Science: Social Outreach Chair</h2>
-                  <p>In May of 2019, I interviewed and was selected as a Social Outreach chair for my school’s Women in Computer Science organization.  I am going to be responsible for organizing community events that are in support of creating a welcoming environment for women interested in computing. </p>
-                </div>
-              </div>
-              <div className="timeline-item flex-items-default">
-                <div className="timeline-content text-left">
                   <h2> Recycle Now </h2>
                   <p> In January of 2019, during a hackathon organized by the Women Computer Science organization, my team and I put together a small project called Recycle Now. It is an app that allows users to take pictures of random objects and returns the right method of disposal depending on what it is: Recycle, Compost or Trash. To build this app we used Apple’s Machine Learning toolkit as well as Swift to deploy it onto an app. </p>
                 </div>
               </div>
               <div className="timeline-item flex-items-default">
                 <div className="timeline-content text-left">
+                  <h2> Women in Computer Science: Social Outreach Chair</h2>
+                  <p>In May of 2019, I interviewed and was selected as a Social Outreach chair for my school’s Women in Computer Science organization.  I am going to be responsible for organizing community events that are in support of creating a welcoming environment for women interested in computing. </p>
+                </div>
+              </div>
+              <div className="timeline-item flex-items-default">
+                <div className="timeline-content text-left">
                   <h2>Internship: MassMutual</h2>
-                  <p>During the summer of 2019, I have been interning with the Life Insurance Company MassMutual as a Software Engineering Intern. As a front-end developer on the Interactive Content and Tools team, I have been working to enhance the Calculators on the webpage as well contributing to the MassMutual React Component Library. </p>
+                  <p> During the summer of 2019, I have been interning with the Life Insurance Company MassMutual as a Software Engineering Intern. As a front-end developer on the Interactive Content and Tools team, I have been working to enhance the Calculators on the webpage as well contributing to the MassMutual React Component Library. </p>
                 </div>
               </div>
               <div className="dropdown animated bounceIn" style={{left: '-88px'}}>
