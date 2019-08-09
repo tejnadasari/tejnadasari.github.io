@@ -92,10 +92,6 @@ class App extends React.Component {
                     <option value="Other"> Other </option>
                   </select>
                 </span>
-                , who is interested in
-                <input
-                  type="text"
-                  name="subject" />.
                 <br></br>
                 <br></br>
               I am looking to talk to you about
