@@ -2,14 +2,28 @@ import React from 'react';
 import Typist from 'react-typist';
 import './App.css';
 import Timeline from "./timeline"
+import axios from 'axios'
 
+axios.defaults.headers = {
+  'Content-Type': 'application/json',
+};
 
 class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      scrollPosition: 0
+      scrollPosition: 0,
+      contactInfo: {
+        name: '',
+        email: '',
+        message: '',
+        phoneNumber: '',
+        occupation: ''
+      }
     }
+
+    this.setData = this.setData.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
   }
   componentDidMount() {
     //var $timeline        = $('.timeline');
@@ -20,16 +34,33 @@ class App extends React.Component {
     });
   }
 
+  setData(event) {
+    event.preventDefault()
+    const { name, value } = event.target
+    this.setState(state => ({ ...state, contactInfo: { ...state.contactInfo, [name]: value } }))
+  }
+
   async handleSubmit(event) {
     event.preventDefault();
-    const data = new FormData(event.target);
-    const response = await fetch("/contact", {method : "POST", body: data});
-    const json = await response.json();
-    console.log(json);
+    try {
+    const postBody = {
+      "body": {
+        "name": this.state.contactInfo.name,
+        "email": this.state.contactInfo.email,
+        "message": this.state.contactInfo.message,
+        "phoneNumber": this.state.contactInfo.phoneNumber,
+        "occupation": this.state.contactInfo.occupation
+      }
+    }
+    const response = await axios.post("https://z2uezle44b.execute-api.us-east-1.amazonaws.com/prod/contactme", postBody);
     console.log(response);
+    } catch(error) {
+      console.log('Whoops', error)
+    }
   }
 
   render() {
+    console.log(this.state)
     const pageOne = (this.state.scrollPosition > document.body.scrollHeight / 20) ? ' openPage' : '';
     const pageTwo = (this.state.scrollPosition > (document.body.scrollHeight / 3)) ? ' closePage' : '';
     return (
@@ -79,14 +110,17 @@ class App extends React.Component {
                 My <em> name </em> is
                   <input
                   type="text"
-                  name="fullName"
+                  name="name"
+                  onChange={this.setData}
                   placeholder="Full Name" />.
               </p>
               <br></br>
               <p className="basic interestSentence">
                 I am a
                 <span>
-                  <select name="occupation">
+                  <select name="occupation"
+                  onChange={this.change}
+                  >
                     <option value="Student"> Student </option>
                     <option value="Recruiter"> Recruiter </option>
                     <option value="Other"> Other </option>
@@ -97,7 +131,9 @@ class App extends React.Component {
               I am looking to talk to you about
                 <input
                   type="text"
-                  name="topic" />.
+                  name="message" 
+                  onChange={this.setData}
+                  />.
                 <br></br>
                 <br></br>
             </p>
@@ -107,22 +143,24 @@ class App extends React.Component {
                   type="phone"
                   name="phoneNumber"
                   placeholder="###-###-####"
-                  pattern="^[2-9]\d{2}-\d{3}-\d{4}$" />
+                  onChange={this.setData}
+                  />
                 and
                 <br></br>
                 <br></br>
                 <em> email</em> me at
                 <input
                   type="email"
-                  name="emailAddress"
-                  placeholder=" Email Address " />
+                  name="email"
+                  placeholder=" Email Address " 
+                  onChange={this.setData}/>
                 to get in touch. Thanks!
             </p>
             </div>
             <br></br>
             <br></br>
             <p>
-              <input className="button" type="submit" value="Submit" />
+              <button className="button" type="submit">Submit</button>
             </p>
           </form>
         </div>
