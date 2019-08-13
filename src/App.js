@@ -9,6 +9,7 @@ axios.defaults.headers = {
 };
 
 class App extends React.Component {
+  
   constructor(props) {
     super(props)
     this.state = {
@@ -25,6 +26,8 @@ class App extends React.Component {
     this.setData = this.setData.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
   }
+
+
   componentDidMount() {
     //var $timeline        = $('.timeline');
     const that = this;
@@ -39,6 +42,11 @@ class App extends React.Component {
     const { name, value } = event.target
     this.setState(state => ({ ...state, contactInfo: { ...state.contactInfo, [name]: value } }))
   }
+  
+  // afterSubmit(event) {
+  //   event.preventDefault();
+  //   event.target.reset();
+  // }
 
   async handleSubmit(event) {
     event.preventDefault();
@@ -74,7 +82,7 @@ class App extends React.Component {
               <Typist.Delay ms={1000} />
               
               <br></br>
-              <p className="aboutMe" > I am a rising sophomore at the University of Texas at Austin, majoring in Computer Science and minoring in Business Foundations</p>
+              <p className="aboutMe" > A rising sophomore at The University of Texas at Austin, majoring in Computer Science and minoring in Business Foundations</p>
             </Typist>
           </div>
           
@@ -119,13 +127,14 @@ class App extends React.Component {
                 I am a
                 <span>
                   <select name="occupation"
-                  onChange={this.change}
+                  onChange={this.handleChange}
                   >
                     <option value="Student"> Student </option>
                     <option value="Recruiter"> Recruiter </option>
                     <option value="Other"> Other </option>
                   </select>
                 </span>
+                .
                 <br></br>
                 <br></br>
               I am looking to talk to you about
@@ -145,10 +154,9 @@ class App extends React.Component {
                   placeholder="###-###-####"
                   onChange={this.setData}
                   />
-                and
                 <br></br>
                 <br></br>
-                <em> email</em> me at
+                <em> and email</em> me at
                 <input
                   type="email"
                   name="email"
@@ -160,7 +168,13 @@ class App extends React.Component {
             <br></br>
             <br></br>
             <p>
-              <button className="button" type="submit">Submit</button>
+              <button 
+                className="button" 
+                type="submit"
+                //onClick = {this.afterSubmit}
+                >
+                  Submit
+                </button>
             </p>
           </form>
         </div>

@@ -155,6 +155,8 @@ html, body {
 .form{
   font-size: 25px;
   font-family: "IBMPlex";
+  padding-left: 70px;
+  text-align:left
 }
 
 /* Textbox Styling */
