@@ -22,14 +22,12 @@ class App extends React.Component {
         occupation: ''
       }
     }
-
     this.setData = this.setData.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
   }
 
 
   componentDidMount() {
-    //var $timeline        = $('.timeline');
     const that = this;
     window.addEventListener('scroll', function (e) {
       that.setState({ scrollPosition: window.scrollY })
@@ -43,10 +41,6 @@ class App extends React.Component {
     this.setState(state => ({ ...state, contactInfo: { ...state.contactInfo, [name]: value } }))
   }
   
-  // afterSubmit(event) {
-  //   event.preventDefault();
-  //   event.target.reset();
-  // }
 
   async handleSubmit(event) {
     event.preventDefault();
@@ -66,6 +60,9 @@ class App extends React.Component {
       console.log('Whoops', error)
     }
   }
+
+
+  
 
   render() {
     console.log(this.state)
@@ -171,7 +168,6 @@ class App extends React.Component {
               <button 
                 className="button" 
                 type="submit"
-                //onClick = {this.afterSubmit}
                 >
                   Submit
                 </button>
